@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ATSP</class>
+ <widget class="QMainWindow" name="ATSP">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ATSP-AutoTestSystemPlatform</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/new/icon/images/atsp.ico</normaloff>:/new/icon/images/atsp.ico</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextBesideIcon</enum>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_15">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QWidget" name="functionWidget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>45</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>45</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_16">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="5" column="0">
+        <widget class="QToolButton" name="canToolButton">
+         <property name="minimumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>CAN</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/new/icon/images/CAN.ico</normaloff>:/new/icon/images/CAN.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QToolButton" name="commonToolButton">
+         <property name="minimumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>Common</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/new/icon/images/serialPort.ico</normaloff>:/new/icon/images/serialPort.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QToolButton" name="ethernetToolButton">
+         <property name="minimumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>7</pointsize>
+          </font>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>Ethernet</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/new/icon/images/ethernet.ico</normaloff>:/new/icon/images/ethernet.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QToolButton" name="atspToolButton">
+         <property name="minimumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::TabFocus</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>ATSP</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/new/icon/images/atsp.ico</normaloff>:/new/icon/images/atsp.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>246</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="0">
+        <widget class="QToolButton" name="rs485ToolButton">
+         <property name="minimumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>485</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/new/icon/images/RS485.ico</normaloff>:/new/icon/images/RS485.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QToolButton" name="welcomeToolButton">
+         <property name="minimumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Welcome</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/new/icon/images/welcome.ico</normaloff>:/new/icon/images/welcome.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="popupMode">
+          <enum>QToolButton::DelayedPopup</enum>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+         <property name="arrowType">
+          <enum>Qt::NoArrow</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QToolButton" name="helpToolButton">
+         <property name="minimumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>45</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>Help</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/new/icon/images/help.ico</normaloff>:/new/icon/images/help.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="AreaWidget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuSystem_s">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="actionNew_N"/>
+    <addaction name="actionOpen_O"/>
+    <addaction name="actionEdit"/>
+    <addaction name="actionSave_S"/>
+    <addaction name="actionSaveAs_A"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint_P"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit_X"/>
+   </widget>
+   <widget class="QMenu" name="menuView_V">
+    <property name="title">
+     <string>View(&amp;V)</string>
+    </property>
+    <widget class="QMenu" name="menuLanguage">
+     <property name="title">
+      <string>Language</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/new/icon/images/Language.ico</normaloff>:/new/icon/images/Language.ico</iconset>
+     </property>
+     <addaction name="actionEnglish"/>
+     <addaction name="actionChinese"/>
+    </widget>
+    <widget class="QMenu" name="menuATSP">
+     <property name="title">
+      <string>ATSP</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/new/icon/images/atsp.ico</normaloff>:/new/icon/images/atsp.ico</iconset>
+     </property>
+     <addaction name="actionSequenceExecutor"/>
+     <addaction name="actionConsolOutput"/>
+     <addaction name="actionSequenceEdit"/>
+     <addaction name="separator"/>
+     <addaction name="actionSequence"/>
+     <addaction name="actionTree"/>
+     <addaction name="actionStatus"/>
+     <addaction name="separator"/>
+     <addaction name="actionEngineLog"/>
+     <addaction name="actionGeneralLog"/>
+     <addaction name="actionGraphLog"/>
+     <addaction name="actionStatisticLog"/>
+    </widget>
+    <addaction name="menuATSP"/>
+    <addaction name="separator"/>
+    <addaction name="actionCommon"/>
+    <addaction name="actionRS"/>
+    <addaction name="actionCAN"/>
+    <addaction name="actionEthernet"/>
+    <addaction name="separator"/>
+    <addaction name="actionToolsBar"/>
+    <addaction name="separator"/>
+    <addaction name="actionTopScreen"/>
+    <addaction name="separator"/>
+    <addaction name="menuLanguage"/>
+    <addaction name="actionHelp_2"/>
+   </widget>
+   <widget class="QMenu" name="menuTools_T">
+    <property name="title">
+     <string>Tools(&amp;T)</string>
+    </property>
+    <addaction name="actionConfiguration"/>
+    <addaction name="actionScreenshot"/>
+    <addaction name="actionPrintScreen"/>
+    <addaction name="actionRecording"/>
+    <addaction name="actionViewPictures"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp_H">
+    <property name="title">
+     <string>Help(&amp;H)</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuSystem_s"/>
+   <addaction name="menuView_V"/>
+   <addaction name="menuTools_T"/>
+   <addaction name="menuHelp_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew_N"/>
+   <addaction name="actionOpen_O"/>
+   <addaction name="actionEdit"/>
+   <addaction name="actionSave_S"/>
+   <addaction name="actionSaveAs_A"/>
+   <addaction name="actionPrint_P"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionConfiguration"/>
+   <addaction name="separator"/>
+   <addaction name="actionScreenshot"/>
+   <addaction name="actionPrintScreen"/>
+   <addaction name="actionRecording"/>
+   <addaction name="actionViewPictures"/>
+   <addaction name="separator"/>
+   <addaction name="actionTopScreen"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionConfiguration">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/setting.ico</normaloff>:/new/icon/images/setting.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Configuration</string>
+   </property>
+  </action>
+  <action name="actionSequenceExecutor">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/SequenceExecutor .ico</normaloff>:/new/icon/images/SequenceExecutor .ico</iconset>
+   </property>
+   <property name="text">
+    <string>SequenceExecutor </string>
+   </property>
+  </action>
+  <action name="actionConsolOutput">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/console.ico</normaloff>:/new/icon/images/console.ico</iconset>
+   </property>
+   <property name="text">
+    <string>ConsolOutput </string>
+   </property>
+  </action>
+  <action name="actionSequenceEdit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/SequenceEdit.ico</normaloff>:/new/icon/images/SequenceEdit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>SequenceEdit</string>
+   </property>
+  </action>
+  <action name="actionSequence">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/tree1.ico</normaloff>:/new/icon/images/tree1.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Sequence</string>
+   </property>
+  </action>
+  <action name="actionTree">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/tree2.ico</normaloff>:/new/icon/images/tree2.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Tree</string>
+   </property>
+  </action>
+  <action name="actionStatus">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/tree3.ico</normaloff>:/new/icon/images/tree3.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Status</string>
+   </property>
+  </action>
+  <action name="actionEngineLog">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/log1.ico</normaloff>:/new/icon/images/log1.ico</iconset>
+   </property>
+   <property name="text">
+    <string>EngineLog </string>
+   </property>
+  </action>
+  <action name="actionGeneralLog">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/log2.ico</normaloff>:/new/icon/images/log2.ico</iconset>
+   </property>
+   <property name="text">
+    <string>GeneralLog </string>
+   </property>
+  </action>
+  <action name="actionGraphLog">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/Graph.ico</normaloff>:/new/icon/images/Graph.ico</iconset>
+   </property>
+   <property name="text">
+    <string>GraphLog</string>
+   </property>
+  </action>
+  <action name="actionStatisticLog">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/Graphical.ico</normaloff>:/new/icon/images/Graphical.ico</iconset>
+   </property>
+   <property name="text">
+    <string>StatisticLog</string>
+   </property>
+  </action>
+  <action name="actionNew_N">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/new.ico</normaloff>:/new/icon/images/new.ico</iconset>
+   </property>
+   <property name="text">
+    <string>New(&amp;N)</string>
+   </property>
+  </action>
+  <action name="actionOpen_O">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/open.ico</normaloff>:/new/icon/images/open.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Open(&amp;O)</string>
+   </property>
+  </action>
+  <action name="actionSave_S">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/save.ico</normaloff>:/new/icon/images/save.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Save(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionSaveAs_A">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/saveAs.ico</normaloff>:/new/icon/images/saveAs.ico</iconset>
+   </property>
+   <property name="text">
+    <string>SaveAs(&amp;A)</string>
+   </property>
+  </action>
+  <action name="actionPrint_P">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/print.ico</normaloff>:/new/icon/images/print.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Print(&amp;P)</string>
+   </property>
+  </action>
+  <action name="actionExit_X">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/exit.ico</normaloff>:/new/icon/images/exit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Exit(&amp;X)</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/edit.ico</normaloff>:/new/icon/images/edit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Edit(&amp;E)</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/help.ico</normaloff>:/new/icon/images/help.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/info.ico</normaloff>:/new/icon/images/info.ico</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionProtocol">
+   <property name="text">
+    <string>Protocol</string>
+   </property>
+  </action>
+  <action name="actionScreenshot">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/Screenshot2.ico</normaloff>:/new/icon/images/Screenshot2.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Screenshot</string>
+   </property>
+  </action>
+  <action name="actionPrintScreen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/screenshot.ico</normaloff>:/new/icon/images/screenshot.ico</iconset>
+   </property>
+   <property name="text">
+    <string>PrintScreen</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/English.ico</normaloff>:/new/icon/images/English.ico</iconset>
+   </property>
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionChinese">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/Chinese.ico</normaloff>:/new/icon/images/Chinese.ico</iconset>
+   </property>
+   <property name="text">
+    <string>简体中文</string>
+   </property>
+  </action>
+  <action name="actionRecording">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/recording.ico</normaloff>:/new/icon/images/recording.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Recording</string>
+   </property>
+  </action>
+  <action name="actionViewPictures">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/imgview.ico</normaloff>:/new/icon/images/imgview.ico</iconset>
+   </property>
+   <property name="text">
+    <string>ViewPictures</string>
+   </property>
+  </action>
+  <action name="actionCommon">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/serialPort.ico</normaloff>:/new/icon/images/serialPort.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Common</string>
+   </property>
+  </action>
+  <action name="actionRS">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/RS485.ico</normaloff>:/new/icon/images/RS485.ico</iconset>
+   </property>
+   <property name="text">
+    <string>RS485</string>
+   </property>
+  </action>
+  <action name="actionCAN">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/CAN.ico</normaloff>:/new/icon/images/CAN.ico</iconset>
+   </property>
+   <property name="text">
+    <string>CAN</string>
+   </property>
+  </action>
+  <action name="actionEthernet">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/ethernet.ico</normaloff>:/new/icon/images/ethernet.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Ethernet</string>
+   </property>
+  </action>
+  <action name="actionHelp_2">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/help.ico</normaloff>:/new/icon/images/help.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionToolsBar">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/toolbar.ico</normaloff>:/new/icon/images/toolbar.ico</iconset>
+   </property>
+   <property name="text">
+    <string>ToolBar</string>
+   </property>
+  </action>
+  <action name="actionTopScreen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon/images/topscreen.ico</normaloff>:/new/icon/images/topscreen.ico</iconset>
+   </property>
+   <property name="text">
+    <string>TopScreen</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

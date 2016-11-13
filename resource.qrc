@@ -1,0 +1,57 @@
+<RCC>
+    <qresource prefix="/new/icon">
+        <file>images/titlepng.png</file>
+        <file>images/setting.ico</file>
+        <file>images/console.ico</file>
+        <file>images/Graphical.ico</file>
+        <file>images/SequenceEdit.ico</file>
+        <file>images/SequenceExecutor .ico</file>
+        <file>images/tree1.ico</file>
+        <file>images/tree2.ico</file>
+        <file>images/tree3.ico</file>
+        <file>images/title.png</file>
+        <file>images/edit.ico</file>
+        <file>images/new.ico</file>
+        <file>images/open.ico</file>
+        <file>images/save.ico</file>
+        <file>images/saveAs.ico</file>
+        <file>images/print.ico</file>
+        <file>images/exit.ico</file>
+        <file>images/log2.ico</file>
+        <file>images/log1.ico</file>
+        <file>images/Graph.ico</file>
+        <file>images/help.ico</file>
+        <file>images/info.ico</file>
+        <file>images/pausehot.ico</file>
+        <file>images/Start.ico</file>
+        <file>images/stop.ico</file>
+        <file>images/scroll.ico</file>
+        <file>images/Screenshot2.ico</file>
+        <file>images/cycle.ico</file>
+        <file>images/screenshot.ico</file>
+        <file>images/down.ico</file>
+        <file>images/ethernet.ico</file>
+        <file>images/serialPort.ico</file>
+        <file>images/Language.ico</file>
+        <file>images/Chinese.ico</file>
+        <file>images/English.ico</file>
+        <file>images/welcome.ico</file>
+        <file>images/CAN.ico</file>
+        <file>images/RS485.ico</file>
+        <file>images/recording.ico</file>
+        <file>images/imgview.ico</file>
+        <file>images/error.ico</file>
+        <file>images/atsp.ico</file>
+        <file>images/green.ico</file>
+        <file>images/red.ico</file>
+        <file>images/yellow.ico</file>
+        <file>images/green24.ico</file>
+        <file>images/red24.ico</file>
+        <file>images/yellow24.ico</file>
+        <file>images/green16.ico</file>
+        <file>images/red16.ico</file>
+        <file>images/yellow16.ico</file>
+        <file>images/toolbar.ico</file>
+        <file>images/topscreen.ico</file>
+    </qresource>
+</RCC>
