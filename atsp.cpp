@@ -24,7 +24,7 @@ ATSP::ATSP(QWidget *parent) :
    msgLabel = new QLabel;
    msgLabel->setMinimumSize(msgLabel->sizeHint());
    msgLabel->setAlignment(Qt::AlignHCenter);
-   msgLabel->setText("   成功启动，欢迎使用ATSP测试系统！");
+   msgLabel->setText(" 成功启动，欢迎使用ATSP测试系统！");
    ui->statusBar->addWidget(msgLabel);
    ui->statusBar->setStyleSheet(QString("QStatusBar::item{border: 0px}"));
 }

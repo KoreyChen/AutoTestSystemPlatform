@@ -13,4 +13,10 @@ FullForm::FullForm(QWidget *parent) :
 FullForm::~FullForm()
 {
     delete ui;
+
+
+
+
+
+
 }
