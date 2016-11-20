@@ -53,5 +53,6 @@
         <file>images/yellow16.ico</file>
         <file>images/toolbar.ico</file>
         <file>images/topscreen.ico</file>
+        <file>images/iicspi.ico</file>
     </qresource>
 </RCC>

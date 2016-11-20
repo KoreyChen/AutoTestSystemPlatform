@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     testsystemform.cpp \
     aboutdialog.cpp \
     helpdialog.cpp \
-    fullform.cpp
+    fullform.cpp \
+    iicspi.cpp
 
 HEADERS  += atsp.h \
     canform.h \
@@ -31,7 +32,8 @@ HEADERS  += atsp.h \
     testsystemform.h \
     aboutdialog.h \
     helpdialog.h \
-    fullform.h
+    fullform.h \
+    iicspi.h
 
 FORMS    += atsp.ui \
     canform.ui \
@@ -41,7 +43,8 @@ FORMS    += atsp.ui \
     testsystemform.ui \
     aboutdialog.ui \
     helpdialog.ui \
-    fullform.ui
+    fullform.ui \
+    iicspi.ui
 
 RESOURCES += \
     resource.qrc

@@ -13,6 +13,7 @@ ATSP::ATSP(QWidget *parent) :
    P_ethernetform=new EthernetForm();
    P_canform =new CanForm();
    P_fullform=new FullForm();
+   P_iicspiform=new IICSPI();
 
    //传递串口指针,将其他几个窗口类传递给测试窗口
    P_testsystemform->T_commonform=P_commonform;
@@ -24,7 +25,7 @@ ATSP::ATSP(QWidget *parent) :
    msgLabel = new QLabel;
    msgLabel->setMinimumSize(msgLabel->sizeHint());
    msgLabel->setAlignment(Qt::AlignHCenter);
-   msgLabel->setText(" 成功启动，欢迎使用ATSP测试系统！");
+   msgLabel->setText("   成功启动，欢迎使用ATSP测试系统！");
    ui->statusBar->addWidget(msgLabel);
    ui->statusBar->setStyleSheet(QString("QStatusBar::item{border: 0px}"));
 }
@@ -39,7 +40,7 @@ void ATSP::SetAreaWidget(int num)
 
     static  int  *indexForm = new int(0);
 
-    if(((num>=0)&&(num<7))&&((*indexForm>=0)&&(*indexForm<7)))
+    if(((num>=0)&&(num<8))&&((*indexForm>=0)&&(*indexForm<8)))
     {
         ui->welcomeToolButton->setAutoRaise(true);
         ui->atspToolButton->setAutoRaise(true);
@@ -48,6 +49,8 @@ void ATSP::SetAreaWidget(int num)
         ui->canToolButton->setAutoRaise(true);
         ui->ethernetToolButton->setAutoRaise(true);
         ui->helpToolButton->setAutoRaise(true);
+        ui->iicspiToolButton->setAutoRaise(true);
+
         switch(*indexForm)
         {
         case 0: break;
@@ -93,6 +96,14 @@ void ATSP::SetAreaWidget(int num)
                 P_ethernetform->hide();
             }
             break;
+        case 7:
+            if(num!=7)
+            {
+                ui->gridLayout->removeWidget(P_iicspiform);
+                P_iicspiform->hide();
+            }
+            break;
+
         default : break;
         }
         switch(num)
@@ -152,6 +163,15 @@ void ATSP::SetAreaWidget(int num)
                 ui->ethernetToolButton->setAutoRaise(false);
             }
             break;
+        case 7  :
+            if(*indexForm!=7)
+            {
+                *indexForm=7;
+                ui->gridLayout->addWidget(P_iicspiform);
+                P_iicspiform->show();
+                ui->iicspiToolButton->setAutoRaise(false);
+            }
+            break;
         default : break;
 
         }
@@ -188,7 +208,10 @@ void ATSP::on_ethernetToolButton_clicked()
 {
      SetAreaWidget(6);
 }
-
+void ATSP::on_iicspiToolButton_clicked()
+{
+     SetAreaWidget(7);
+}
 void ATSP::on_actionAbout_triggered()
 {
     AboutDialog aboutdialog;//= new AboutDialog;
@@ -256,3 +279,5 @@ void ATSP::on_actionTopScreen_triggered()
     P_fullform->show();
 
 }
+
+

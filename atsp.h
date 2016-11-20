@@ -21,6 +21,7 @@
 #include "aboutdialog.h"
 #include "helpdialog.h"
 #include "fullform.h"
+#include "iicspi.h"
 
 namespace Ui {
 class ATSP;
@@ -40,6 +41,7 @@ public:
     EthernetForm    *P_ethernetform   ;
     CanForm         *P_canform        ;
     FullForm        *P_fullform       ;
+    IICSPI          *P_iicspiform     ;
 private slots:
 
     void on_welcomeToolButton_clicked();
@@ -67,6 +69,8 @@ private slots:
     void on_actionToolsBar_triggered();
 
     void on_actionTopScreen_triggered();
+
+    void on_iicspiToolButton_clicked();
 
 private:
     Ui::ATSP *ui;
