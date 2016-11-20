@@ -1,7 +1,7 @@
 #include "iicspi.h"
 #include "ui_iicspi.h"
 
-IICSPI::IICSPI(QWidget *parent) :
+IICSPI::IICSPI(QWidget *parent):
     QWidget(parent),
     ui(new Ui::IICSPI)
 {
