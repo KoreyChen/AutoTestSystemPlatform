@@ -315,6 +315,18 @@ void CommonForm::on_comAOpenPushButton_clicked()
                ui->comAStatuesImg->setPixmap(green);
                QString str="串口已打开";
                comAStatusShow(&str);
+
+
+               ui->comAOpenPushButton->setText("关闭串口");
+
+               ui->comABaudRateComboBox->setEnabled(false);
+               ui->comACheckBitComboBox->setEnabled(false);
+               ui->comAdataBitComboBox->setEnabled(false);
+               ui->comANumComboBox->setEnabled(false);
+               ui->comAStopBitComboBox->setEnabled(false);
+
+
+
            }else
            {
                QString str="打开串口失败";
@@ -324,23 +336,8 @@ void CommonForm::on_comAOpenPushButton_clicked()
 
        // this->ComAOpenColor=ui->comAOpenPushButton->backgroundRole();
        // ui->comAOpenPushButton->setStyleSheet("background:Green");
-        ui->comAOpenPushButton->setText("关闭串口");
 
-        ui->comABaudRateComboBox->setEnabled(false);
-        ui->comACheckBitComboBox->setEnabled(false);
-        ui->comAdataBitComboBox->setEnabled(false);
-        ui->comANumComboBox->setEnabled(false);
-        ui->comAStopBitComboBox->setEnabled(false);
-       //        QPalette palette;
-       //        palette.setColor(QPalette::Window, Qt::green);
-       //       ui->comAOpenPushButton->setPalette(palette);
-      //  ui->comAOpenPushButton->setPalette(QPalette(Qt::green));
-       // ui->comAOpenPushButton->setForegroundRole(Qt::green);
 
-//        QPalette   pal   =   ui->comAOpenPushButton->palette();
-//        pal.setColor( QPalette::Button,QColor(255,0,0));
-//        ui->comAOpenPushButton->setPalette(pal);
-       //serialPortAtsp->open(QSerialPort::ReadWrite);
     }else
         if(ui->comAOpenPushButton->text()=="关闭串口")
         {
@@ -402,6 +399,16 @@ void CommonForm::on_comBOpenPushButton_clicked()
                 ui->comBStatuesImg->setPixmap(green);
                 QString str="串口已打开";
                 comBStatusShow(&str);
+
+
+                ui->comBOpenPushButton->setText("关闭串口");
+
+                ui->comBBaudRateComboBox->setEnabled(false);
+                ui->comBCheckBitComboBox->setEnabled(false);
+                ui->comBdataBitComboBox->setEnabled(false);
+                ui->comBNumComboBox->setEnabled(false);
+                ui->comBStopBitComboBox->setEnabled(false);
+
             }else
             {
                 QString str="打开串口失败";
@@ -410,13 +417,7 @@ void CommonForm::on_comBOpenPushButton_clicked()
         }
        // this->ComBOpenColor=ui->comBOpenPushButton->backgroundRole();
        // ui->comBOpenPushButton->setStyleSheet("background:Green");
-        ui->comBOpenPushButton->setText("关闭串口");
 
-        ui->comBBaudRateComboBox->setEnabled(false);
-        ui->comBCheckBitComboBox->setEnabled(false);
-        ui->comBdataBitComboBox->setEnabled(false);
-        ui->comBNumComboBox->setEnabled(false);
-        ui->comBStopBitComboBox->setEnabled(false);
 
     }else
         if(ui->comBOpenPushButton->text()=="关闭串口")

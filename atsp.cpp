@@ -13,13 +13,13 @@ ATSP::ATSP(QWidget *parent) :
    P_ethernetform=new EthernetForm();
    P_canform =new CanForm();
    P_fullform=new FullForm();
-   P_iicspiform=new IICSPI();
+  // P_iicspiform=new IICSPI();
 
    //传递串口指针,将其他几个窗口类传递给测试窗口
    P_testsystemform->T_commonform=P_commonform;
    P_testsystemform->T_canform=P_canform;
    P_testsystemform->T_ethernetform=P_ethernetform;
-
+   //P_testsystemform->
    //加载起始页面
    SetAreaWidget(1);
    msgLabel = new QLabel;
@@ -49,7 +49,7 @@ void ATSP::SetAreaWidget(int num)
         ui->canToolButton->setAutoRaise(true);
         ui->ethernetToolButton->setAutoRaise(true);
         ui->helpToolButton->setAutoRaise(true);
-        ui->iicspiToolButton->setAutoRaise(true);
+        //ui->iicspiToolButton->setAutoRaise(true);
 
         switch(*indexForm)
         {
@@ -99,8 +99,8 @@ void ATSP::SetAreaWidget(int num)
         case 7:
             if(num!=7)
             {
-                ui->gridLayout->removeWidget(P_iicspiform);
-                P_iicspiform->hide();
+//                ui->gridLayout->removeWidget(P_iicspiform);
+//                P_iicspiform->hide();
             }
             break;
 
@@ -167,9 +167,9 @@ void ATSP::SetAreaWidget(int num)
             if(*indexForm!=7)
             {
                 *indexForm=7;
-                ui->gridLayout->addWidget(P_iicspiform);
-                P_iicspiform->show();
-                ui->iicspiToolButton->setAutoRaise(false);
+//                ui->gridLayout->addWidget(P_iicspiform);
+//                P_iicspiform->show();
+//                ui->iicspiToolButton->setAutoRaise(false);
             }
             break;
         default : break;
@@ -210,7 +210,7 @@ void ATSP::on_ethernetToolButton_clicked()
 }
 void ATSP::on_iicspiToolButton_clicked()
 {
-     SetAreaWidget(7);
+    // SetAreaWidget(7);
 }
 void ATSP::on_actionAbout_triggered()
 {
