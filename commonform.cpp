@@ -52,15 +52,6 @@ CommonForm::CommonForm(QWidget *parent) :
     connect(comATimer,SIGNAL(timeout()),this,SLOT(comATimerSlot()));
     connect(comBTimer,SIGNAL(timeout()),this,SLOT(comBTimerSlot()));
 
-    //重设部分分辨率以满足低分辨率下使用
-    if((screen_width<=1920)&&(screen_hight<=1080)) //低分辨的情况下
-    {
-        ui->comSetingTabWidget->maximumWidth=180;
-        ui->comSetingTabWidget->minimumWidth=180;
-
-    }
-
-    //重设分辨率完
     ui->comASendTextEdit->installEventFilter(this);//安装事件
     ui->comBSendTextEdit->installEventFilter(this);//安装事件
 }
@@ -68,6 +59,17 @@ CommonForm::CommonForm(QWidget *parent) :
 CommonForm::~CommonForm()
 {
     delete ui;
+}
+
+void CommonForm::resetScreenShow()
+{
+    //重设部分分辨率以满足低分辨率下使用
+    if((screen_width<=1920)&&(screen_hight<=1080)) //低分辨的情况下
+    {
+        ui->comSetingTabWidget->setMinimumWidth(180);
+        ui->comSetingTabWidget->setMaximumWidth(180);
+    }
+    //重设分辨率完
 }
 
 void CommonForm::on_hideSetingPushButton_clicked()

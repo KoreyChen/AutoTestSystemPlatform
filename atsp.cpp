@@ -6,6 +6,7 @@ ATSP::ATSP(QWidget *parent) :
     ui(new Ui::ATSP)
 {
    ui->setupUi(this);
+
    //创建实例化调试窗口
    P_testsystemform=new TestSystemForm() ;
    P_commonform=new CommonForm();
@@ -13,6 +14,7 @@ ATSP::ATSP(QWidget *parent) :
    P_ethernetform=new EthernetForm();
    P_canform =new CanForm();
    P_fullform=new FullForm();
+
   // P_iicspiform=new IICSPI();
 
    //传递串口指针,将其他几个窗口类传递给测试窗口
@@ -29,7 +31,6 @@ ATSP::ATSP(QWidget *parent) :
    ui->statusBar->addWidget(msgLabel);
    ui->statusBar->setStyleSheet(QString("QStatusBar::item{border: 0px}"));
 
-
    //读取屏幕分辨率，用于调整不同分辨率下的显示，特别是高DPI屏幕放大后不协调。
    QDesktopWidget *desktopwidget = QApplication::desktop();
    QRect deskrect = desktopwidget->availableGeometry();
@@ -37,6 +38,7 @@ ATSP::ATSP(QWidget *parent) :
 
    P_commonform->screen_hight = deskrect.height();
    P_commonform->screen_width = deskrect.width();
+   P_commonform->resetScreenShow();
 
 }
 
