@@ -40,6 +40,13 @@ ATSP::ATSP(QWidget *parent) :
    P_commonform->screen_width = deskrect.width();
    P_commonform->resetScreenShow();
 
+   //重设部分分辨率以满足低分辨率下使用
+   if((deskrect.width()>1920)&&(deskrect.height()>1080)) //低分辨的情况下
+   {
+       this->setMinimumHeight(750);
+   }
+   //重设分辨率完
+
 }
 
 ATSP::~ATSP()
