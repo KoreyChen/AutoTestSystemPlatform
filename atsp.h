@@ -12,6 +12,9 @@
 #include <QClipboard>
 #include <QFileInfo>
 #include <QDesktopServices>
+#include <QApplication>
+#include <QDesktopWidget>
+#include <QRect>
 
 #include "commonform.h"
 #include "testsystemform.h"

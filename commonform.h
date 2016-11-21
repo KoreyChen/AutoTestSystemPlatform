@@ -32,6 +32,9 @@ public:
     QSerialPort *serialPortA;
     QSerialPort *serialPortB;
 
+    int screen_width;
+    int screen_hight;
+
 protected:
     bool eventFilter(QObject *obj, QEvent *e);
 

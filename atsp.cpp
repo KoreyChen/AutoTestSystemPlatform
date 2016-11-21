@@ -28,6 +28,16 @@ ATSP::ATSP(QWidget *parent) :
    msgLabel->setText("   成功启动，欢迎使用ATSP测试系统！");
    ui->statusBar->addWidget(msgLabel);
    ui->statusBar->setStyleSheet(QString("QStatusBar::item{border: 0px}"));
+
+
+   //读取屏幕分辨率，用于调整不同分辨率下的显示，特别是高DPI屏幕放大后不协调。
+   QDesktopWidget *desktopwidget = QApplication::desktop();
+   QRect deskrect = desktopwidget->availableGeometry();
+   int screencount = desktopwidget->screenCount();
+
+   P_commonform->screen_hight = deskrect.height();
+   P_commonform->screen_width = deskrect.width();
+
 }
 
 ATSP::~ATSP()

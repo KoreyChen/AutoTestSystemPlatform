@@ -18,8 +18,8 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>500</width>
-    <height>400</height>
+    <width>750</width>
+    <height>665</height>
    </size>
   </property>
   <property name="baseSize">
@@ -521,7 +521,7 @@
      <x>0</x>
      <y>0</y>
      <width>1100</width>
-     <height>30</height>
+     <height>17</height>
     </rect>
    </property>
    <property name="font">
