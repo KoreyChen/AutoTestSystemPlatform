@@ -419,7 +419,7 @@
                   <widget class="QPushButton" name="editPushButton">
                    <property name="minimumSize">
                     <size>
-                     <width>60</width>
+                     <width>55</width>
                      <height>25</height>
                     </size>
                    </property>
@@ -458,7 +458,7 @@
                   <widget class="QPushButton" name="runPushButton">
                    <property name="minimumSize">
                     <size>
-                     <width>60</width>
+                     <width>55</width>
                      <height>25</height>
                     </size>
                    </property>
@@ -492,7 +492,7 @@
                   <widget class="QPushButton" name="pausePushButton">
                    <property name="minimumSize">
                     <size>
-                     <width>60</width>
+                     <width>55</width>
                      <height>25</height>
                     </size>
                    </property>
@@ -520,7 +520,7 @@
                   <widget class="QPushButton" name="stopPushButton">
                    <property name="minimumSize">
                     <size>
-                     <width>60</width>
+                     <width>55</width>
                      <height>25</height>
                     </size>
                    </property>
@@ -555,7 +555,7 @@
                   <widget class="QPushButton" name="cyclePushButton">
                    <property name="minimumSize">
                     <size>
-                     <width>60</width>
+                     <width>55</width>
                      <height>25</height>
                     </size>
                    </property>
@@ -646,7 +646,7 @@
                   <widget class="QPushButton" name="autoScrollPushButton">
                    <property name="minimumSize">
                     <size>
-                     <width>90</width>
+                     <width>85</width>
                      <height>25</height>
                     </size>
                    </property>

@@ -35,6 +35,8 @@ public:
     int screen_width;
     int screen_hight;
 
+    void resetScreenShow();
+
 protected:
     bool eventFilter(QObject *obj, QEvent *e);
 
