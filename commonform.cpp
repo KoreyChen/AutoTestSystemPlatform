@@ -88,15 +88,19 @@ void CommonForm::on_hideSetingPushButton_clicked()
 
 void CommonForm::on_selectViewComboBox_currentIndexChanged(int index)
 {
+
     switch(index)
     {
-    case 0: ui->comAFrame->setVisible(true);
+    case 0:
+            ui->comAFrame->setVisible(true);
             ui->comBFrame->setVisible(false);
             break;
-    case 1: ui->comAFrame->setVisible(false);
+    case 1:
+            ui->comAFrame->setVisible(false);
             ui->comBFrame->setVisible(true);
             break;
-    case 2: ui->comAFrame->setVisible(true);
+    case 2:
+            ui->comAFrame->setVisible(true);
             ui->comBFrame->setVisible(true);
             break;
     default: break;
@@ -515,7 +519,7 @@ void CommonForm::on_comASendPushButton_clicked()
 {
     if(comAOpenStatus)
     {
-        QString str=ui->comASendTextEdit->toPlainText();
+         QString str=ui->comASendTextEdit->toPlainText();
          QByteArray byt;
         if(comACharSend==true)
         {
@@ -533,6 +537,27 @@ void CommonForm::on_comASendPushButton_clicked()
         }
         comASendDataCount += byt.length();
         ui->comASendCountLabel->setText(QString::number(comASendDataCount,10));
+
+        //向发送记录List中插入刚才发送字符串，当发送的内容遇上一次不相同时才记录，最多记录10条
+        if(str!=ui->comASendListComboBox->itemText(0))
+        {
+            ui->comASendListComboBox->insertItem(0,str);
+            for(int i=1;i<10;i++)
+            {
+                 if(str==ui->comASendListComboBox->itemText(i))
+                 {
+                     ui->comASendListComboBox->removeItem(i);
+                 }
+            }
+            if(ui->comASendListComboBox->count()>10)
+            {
+                for(int i=ui->comASendListComboBox->count();i>10;i--)
+                {
+                    ui->comASendListComboBox->removeItem(i-1);
+                }
+            }
+            ui->comASendListComboBox->setCurrentIndex(0);
+        }
     }
 }
 
@@ -558,6 +583,26 @@ void CommonForm::on_comBSendPushButton_clicked()
         }
         comBSendDataCount += byt.length();
         ui->comBSendCountLabel->setText(QString::number(comBSendDataCount,10));
+        //向发送记录List中插入刚才发送字符串，当发送的内容遇上一次不相同时才记录，最多记录10条
+        if(str!=ui->comBSendListComboBox->itemText(0))
+        {
+            ui->comBSendListComboBox->insertItem(0,str);
+            for(int i=1;i<10;i++)
+            {
+                 if(str==ui->comBSendListComboBox->itemText(i))
+                 {
+                     ui->comBSendListComboBox->removeItem(i);
+                 }
+            }
+            if(ui->comBSendListComboBox->count()>10)
+            {
+                for(int i=ui->comBSendListComboBox->count();i>10;i--)
+                {
+                    ui->comBSendListComboBox->removeItem(i-1);
+                }
+            }
+            ui->comBSendListComboBox->setCurrentIndex(0);
+        }
     }
 }
 
@@ -756,6 +801,32 @@ void CommonForm::on_comBAutoSendCheckBox_clicked()
     }
 }
 
+void CommonForm::on_comASendListComboBox_currentIndexChanged(int index)
+{
+    index=0;
+    ui->comASendTextEdit->clear();
+    ui->comASendTextEdit->setText( ui->comASendListComboBox->currentText());
+}
+
+void CommonForm::on_comBSendListComboBox_currentIndexChanged(int index)
+{
+     index=0;
+    ui->comBSendTextEdit->clear();
+    ui->comBSendTextEdit->setText( ui->comBSendListComboBox->currentText());
+}
+
+void CommonForm::on_comSetingTabWidget_currentChanged(int index)
+{
+   if(index==0)
+   {
+       ui->comAFrame->setVisible(true);
+   }else if(index==1)
+   {
+       ui->comBFrame->setVisible(true);
+   }
+}
+
+
 bool CommonForm::eventFilter(QObject *obj, QEvent *e)
 {
 
@@ -819,6 +890,8 @@ bool CommonForm::eventFilter(QObject *obj, QEvent *e)
         }
     return false;
 }
+
+
 
 //char KeyBordInputChar(QKeyEvent *event)
 //{
@@ -906,3 +979,5 @@ bool CommonForm::eventFilter(QObject *obj, QEvent *e)
 //"X",/*Qt::Key_X 0x58 */
 //"Y",/*Qt::Key_Y 0x59 */
 //"Z",/*Qt::Key_Z 0x5a */
+
+

@@ -97,6 +97,12 @@ private slots:
 
     void on_comBAutoSendCheckBox_clicked();
 
+    void on_comASendListComboBox_currentIndexChanged(int index);
+
+    void on_comBSendListComboBox_currentIndexChanged(int index);
+
+    void on_comSetingTabWidget_currentChanged(int index);
+
 private:
     Ui::CommonForm *ui;
 
@@ -148,6 +154,7 @@ private:
 
     void comASendWindowInsertChar();
     void comBSendWindowInsertChar();
+
 };
 
 #endif // COMMONFORM_H

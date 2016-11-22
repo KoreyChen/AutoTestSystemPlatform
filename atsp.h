@@ -15,6 +15,7 @@
 #include <QApplication>
 #include <QDesktopWidget>
 #include <QRect>
+#include <QProcess>
 
 #include "commonform.h"
 #include "testsystemform.h"
@@ -74,6 +75,8 @@ private slots:
     void on_actionTopScreen_triggered();
 
     void on_iicspiToolButton_clicked();
+
+    void on_actionScreenshot_triggered();
 
 private:
     Ui::ATSP *ui;

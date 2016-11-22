@@ -23,7 +23,7 @@ ATSP::ATSP(QWidget *parent) :
    P_testsystemform->T_ethernetform=P_ethernetform;
    //P_testsystemform->
    //加载起始页面
-   SetAreaWidget(1);
+   SetAreaWidget(3);
    msgLabel = new QLabel;
    msgLabel->setMinimumSize(msgLabel->sizeHint());
    msgLabel->setAlignment(Qt::AlignHCenter);
@@ -34,7 +34,7 @@ ATSP::ATSP(QWidget *parent) :
    //读取屏幕分辨率，用于调整不同分辨率下的显示，特别是高DPI屏幕放大后不协调。
    QDesktopWidget *desktopwidget = QApplication::desktop();
    QRect deskrect = desktopwidget->availableGeometry();
-   int screencount = desktopwidget->screenCount();
+  // int screencount = desktopwidget->screenCount();
 
    P_commonform->screen_hight = deskrect.height();
    P_commonform->screen_width = deskrect.width();
@@ -300,3 +300,7 @@ void ATSP::on_actionTopScreen_triggered()
 }
 
 
+void ATSP::on_actionScreenshot_triggered()
+{
+   QProcess::startDetached("./SnapShot.exe",QStringList());
+}

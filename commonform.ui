@@ -1411,48 +1411,7 @@ p, li { white-space: pre-wrap; }
             </layout>
            </item>
            <item row="3" column="0">
-            <widget class="QComboBox" name="comASendListComboBox">
-             <item>
-              <property name="text">
-               <string>ASADADAD</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>adrawrfwrtf</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>返回你发个</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>复合肥和东方红</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>打包带走识别识别</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>dbgsrbhrehe</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>方便水电费水电费不是方便</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>nfndfndffgn</string>
-              </property>
-             </item>
-            </widget>
+            <widget class="QComboBox" name="comASendListComboBox"/>
            </item>
           </layout>
           <zorder>comADataTextEdit</zorder>
@@ -1681,43 +1640,7 @@ p, li { white-space: pre-wrap; }
             </layout>
            </item>
            <item row="3" column="0">
-            <widget class="QComboBox" name="comBSendListComboBox">
-             <item>
-              <property name="text">
-               <string>fnfdndfjn</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>辅导班风大不大方便</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>dfhsdhdsh</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>功能的非官方</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>你发到你的愤怒的</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>好的条件和他结婚</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>基督教地方焦点访谈</string>
-              </property>
-             </item>
-            </widget>
+            <widget class="QComboBox" name="comBSendListComboBox"/>
            </item>
           </layout>
          </widget>
